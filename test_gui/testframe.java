@@ -1,7 +1,6 @@
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
 import javax.swing.JButton;
 
 public class testframe {
@@ -85,19 +84,21 @@ public class testframe {
                 frame2.dispose(); // Close the frame
             }
         });
-        frame2.setVisible(true);
-
         JButton b1 = new JButton("1");
         JButton b2 = new JButton("2");
         JButton b3 = new JButton("3");
         JButton b4 = new JButton("4");
         JButton b5 = new JButton("5");
-
+        
         frame2.add(b1);
         frame2.add(b2);
         frame2.add(b3);
         frame2.add(b4);
         frame2.add(b5);
         
+        frame2.setLayout(new FlowLayout(FlowLayout.RIGHT));
+        frame2.setSize(300,200);
+        frame2.setVisible(true);
+
     }
 }
