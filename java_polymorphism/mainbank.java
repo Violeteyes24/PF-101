@@ -1,7 +1,7 @@
 public class main {
     public static void main(String[] args) {
         SavingsAcct savings = new SavingsAcct(101);
-        CheckingAcct checking = new CheckingAcct(102, 100);
+        CheckAcc checking = new CheckAcc(102, 100);
         //both instance using deposit method from superclass
         savings.deposit(1000);
         checking.deposit(500);

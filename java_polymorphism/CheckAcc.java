@@ -1,8 +1,8 @@
-public class CheckingAcct extends BankAccount{
+public class CheckAcc extends BankAccount{
     protected double overDraftLimit;
 
-    public CheckingAcct(int Accountnumber, double overDraftLimit){
-        super(Accountnumber);
+    public CheckingAcc(int account_number, double overDraftLimit){
+        super(account_number);
         this.overDraftLimit = overDraftLimit;
     }
 
